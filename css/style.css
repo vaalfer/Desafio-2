@@ -1,0 +1,172 @@
+
+.mainbox {
+    display: grid;
+    grid-template-areas: 
+    /*  header 
+    menu tarjetas
+    parte inferior */
+    "header header"
+    "menu main" 
+    "footer footer"
+    ;
+    grid-template-columns: 0.25fr auto;
+    grid-template-rows: auto auto auto;
+    /*gap: 10px;*/
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+.top {
+    grid-area: header;
+    background-color: #b98389;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #E0FBFC;
+    /*margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;*/
+}
+
+.topleft {
+    grid-area: header;
+    text-align: right;
+    margin-right: 20px;
+    color: #E0FBFC;
+}
+
+.search {
+    font-size: 15px;
+    color: #393E41;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.boxmenu {
+    background-color: #F6F2FF;
+    grid-area: menu;
+    max-width: 150px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;    
+    padding-right: 15px;
+    color: #393E41;
+}
+
+.pf-1,
+.p-1 {
+    padding-top: 1px;
+    line-height: 4px;
+}
+
+.pf-1 {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.p-1 {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.pf-1:hover,
+.p-1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.second-box {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 2px  rgba(0,0,0,0.3);
+    border-radius: 5px;
+    /*height: 40%;*/
+    transition: opacity 0.15s;
+    max-width: 380px;
+}
+
+.card:hover {
+    opacity: 0.8;
+}
+
+.card-img {
+    width: 75%;
+    max-height: 150px;
+    border-radius: 5px;
+}
+
+.img {
+    padding: 10px;
+    margin-left: 25%;
+    align-items: center;
+}
+
+.texto {
+    height: 100px;
+    text-align: center;
+    line-height: 5px;
+}
+
+.texto .card {
+    padding: 0 40px 40px;
+}
+
+.btn,
+.btn2 {
+    background-color: #E0FBFC;
+    color: #393E41;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 8px;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.btn:hover{
+    background-color: #049A8F;
+    color: #E0FBFC;
+}
+
+.btn2:hover {
+    background-color: #b98389;
+    cursor: pointer;
+    color: #E0FBFC;
+}
+
+.bottom {
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr;
+    background-color: #b98389;
+    padding-bottom: 20px;
+    color: #E0FBFC;
+} 
+
+.nosotros {
+    margin-left: 100px;
+}
+
+
+.bot-1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
